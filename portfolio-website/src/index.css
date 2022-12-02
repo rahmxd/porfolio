@@ -38,7 +38,7 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/adrien-olichon-texture.jpg);
+    background-image: url(../src/assets/bg-texture-cat-han.jpg);
     background-size: cover;
 }
 
@@ -59,9 +59,11 @@ h1 {
 
 section {
     margin-top: 8rem;
+    height: 100vh;
 }
 
-section > h2, section > h5 {
+section > h2, 
+section > h5 {
     text-align: center;
     color: var(--color-light);
 }
