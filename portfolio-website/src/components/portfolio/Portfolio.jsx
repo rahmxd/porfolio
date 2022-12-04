@@ -1,58 +1,63 @@
 import React from 'react'
 import './portfolio.css'
-import img1 from '../../assets/img1.jpeg'
-import img2 from '../../assets/img2.png'
-import img3 from '../../assets/img3.jpeg'
-import img4 from '../../assets/img1.jpeg'
+import Img1 from '../../assets/img1.jpeg'
+import Img2 from '../../assets/img2.png'
+import Img3 from '../../assets/img3.jpeg'
+import Img4 from '../../assets/img1.jpeg'
 
+const portfolioData = [
+  {
+    id: 1,
+    image: Img1,
+    title: 'This is a portfolio item title',
+    github: 'https://github.com/Team-Engineering-Project',
+    demo: 'https://github.com'
+  },
+  {
+    id: 2,
+    image: Img2,
+    title: 'This is a portfolio item title',
+    github: 'https://github.com/rahmxd/teaching-mastery-blogs',
+    demo: 'https://github.com'
+  },
+  {
+    id: 3,
+    image: Img3,
+    title: 'This is a portfolio item title',
+    github: 'https://github.com/orgs/A1Maths/repositories',
+    demo: 'https://github.com'
+  },
+  {
+    id: 4,
+    image: Img4,
+    title: 'This is a portfolio item title',
+    github: 'https://github.com/rahmxd/chitter-challenge',
+    demo: 'https://github.com'
+  }
+]
 
 const Portfolio = () => {
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
-
       <div className="container portfolio__container">
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={img1} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/Team-Engineering-Project" className='btn' target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={img2} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/rahmxd/teaching-mastery-blogs" className='btn' target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={img3} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/orgs/A1Maths/repositories" className='btn' target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={img4} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/rahmxd/chitter-challenge" className='btn' target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
+        {
+          portfolioData.map((project) => {
+            return (
+              <article key={project.id} className='portfolio__item'>
+                <div className='portfolio__item-image'>
+                  <img src={project.image} alt={project.title} />
+                </div>
+                <h3>{project.title}</h3>
+                <div className="portfolio__item-cta">
+                  <a href={project.github} className='btn' target='_blank'>Github</a>
+                  <a href={project.demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                </div>
+              </article>  
+            )
+          })
+        }
       </div>
     </section>
   )
