@@ -81,7 +81,7 @@
 
     .about__me {
         width: 50%;
-        margin: 2rem auto 4rem;
+        margin: 2rem auto 6rem;
     }
 
     .about__cards {
@@ -98,7 +98,7 @@
 @media screen and (max-width: 600px) {
    .about__me {
     width: 65%;
-    margin: 5px auto 3rem;
+    margin: 1rem auto 4rem;
    }
 
    .about__cards {
