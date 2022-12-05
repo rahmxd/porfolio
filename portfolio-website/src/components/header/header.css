@@ -44,12 +44,12 @@ header {
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 16rem;
-    height: 16rem;
+    height: 14rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 4rem;
-    border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 0% 50% 50%;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
