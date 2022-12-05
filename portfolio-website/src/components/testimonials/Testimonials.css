@@ -1,5 +1,8 @@
 .container.testimonials__container{
     width: 40%;
+    height: fit-content;
+    block-size: fit-content;
+    padding-bottom: 3rem;
 }
 
 .reference_avatar {
@@ -8,7 +11,7 @@
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto 1rem;
-    border: 0.4rem solid var(--color-primary-variant)
+    border: 0.4rem solid var(--color-primary-variant);
 }
 
 .testimonial {
@@ -26,6 +29,11 @@
     width: 80%;
     margin: 0.8rem auto 0;
 }
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-primary);
+}
+
 
 /* =========== Media queries (Medium devices) =============== */
 

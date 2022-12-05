@@ -4,6 +4,16 @@ import Russell from '../../assets/RussellChoudhury.jpeg'
 import Waqas from '../../assets/WaqasParvaiz.jpeg'
 import Alistair from '../../assets/AlistairGibbs.jpeg'
 
+// import Swiper core and required modules
+import { Pagination } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
 const TestimonialData = [
   {
     id: 1,
@@ -30,24 +40,29 @@ const Testimonials = () => {
     <section id='testimonials'>
       <h5>Reviews from Clients + Colleagues</h5>
       <h2>Testimonials</h2>
-
-      <div className='container testimonials__container'>
+      {/* style={{height: "300px", blockSize: "fit-content"}} */}
+      <Swiper className='container testimonials__container'
+        modules={[ Pagination ]}
+        spaceBetween={40}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+      >
         {
           TestimonialData.map((reference)=>{
             return (
-              <article key={reference.id} className='testimonial'>
-                <div className="reference_avatar">
-                  <img src={reference.displayProfile} alt="First Testimonial" />
-                </div>
-                <h5 className='reference_name'>{reference.name}</h5>
-                  <small className='reference_review'>
-                    {reference.review}
-                  </small>
-              </article>
+              <SwiperSlide>
+                <article key={reference.id} className='testimonial'>
+                  <div className="reference_avatar">
+                    <img src={reference.displayProfile} alt="Display profile" />
+                  </div>
+                  <h5 className='reference_name'>{reference.name}</h5>
+                  <small className='reference_review'>{reference.review}</small>
+                </article>
+              </SwiperSlide>
             )
           })
         }
-      </div>
+      </Swiper>
     </section>
   )
 }
