@@ -25,14 +25,14 @@ const portfolioData = [
     image: Img3,
     title: 'Maths Revision Website: A1 Maths',
     github: 'https://github.com/orgs/A1Maths/repositories',
-    demo: 'https://github.com'
+    demo: ''
   },
   {
     id: 4,
     image: Img4,
     title: 'Chitter (Twitter Clone)',
     github: 'https://github.com/rahmxd/chitter-challenge',
-    demo: 'https://github.com'
+    demo: ''
   }
 ]
 
@@ -52,7 +52,10 @@ const Portfolio = () => {
                 <h3>{project.title}</h3>
                 <div className="portfolio__item-cta">
                   <a href={project.github} className='btn' target='_blank'>Github</a>
-                  <a href={project.demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                  {
+                    project.demo? <a href={project.demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                    : ""
+                  }
                 </div>
               </article>  
             )
