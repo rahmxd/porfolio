@@ -1,6 +1,6 @@
 import React from 'react'
 import './portfolio.css'
-import Img1 from '../../assets/img1.jpeg'
+import Img1 from '../../assets/ViewProfile.png'
 import Img2 from '../../assets/img2.png'
 import Img3 from '../../assets/img3.jpeg'
 import Img4 from '../../assets/img1.jpeg'
@@ -11,14 +11,14 @@ const portfolioData = [
     image: Img1,
     title: 'Industry Partner Portal: Hiring',
     github: 'https://github.com/Team-Engineering-Project',
-    demo: 'https://github.com'
+    demo: 'https://www.dfxtra.co.uk'
   },
   {
     id: 2,
     image: Img2,
     title: 'Teaching Blog',
     github: 'https://github.com/rahmxd/teaching-mastery-blogs',
-    demo: 'https://github.com'
+    demo: ''
   },
   {
     id: 3,
@@ -29,6 +29,13 @@ const portfolioData = [
   },
   {
     id: 4,
+    image: Img4,
+    title: 'Industry Partner: Graduate Profile',
+    github: 'https://github.com/mse4-dfx3',
+    demo: ''
+  },
+  {
+    id: 5,
     image: Img4,
     title: 'Chitter (Twitter Clone)',
     github: 'https://github.com/rahmxd/chitter-challenge',

@@ -39,10 +39,11 @@ const About = () => {
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Autem rem mollitia, voluptas commodi doloribus incidunt 
-            veniam praesentium nihil dolorem omnis a placeat saepe velit 
-            dignissimos laborum perferendis porro. Quos, sapiente?
+          I’m currently based in Brighton and I love solving complex problems. 
+          I have experience as a full stack mern developer. 
+          I prefer working with all areas of my current stack and I enjoy developing user-friendly and efficient applications.
+          My passion for software development started when I started developing a trading bot during my graduation year at Sussex Uni 
+          using NodeJs and IG Trading API to get currency data so I could predict when to enter long or short positions in the forex market.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
