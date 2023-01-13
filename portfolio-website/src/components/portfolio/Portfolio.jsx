@@ -2,8 +2,10 @@ import React from 'react'
 import './portfolio.css'
 import Img1 from '../../assets/ViewProfile.png'
 import Img2 from '../../assets/img2.png'
-import Img3 from '../../assets/img3.jpeg'
-import Img4 from '../../assets/img1.jpeg'
+import Img3 from '../../assets/mathsMock.png'
+import Img4 from '../../assets/noImage.png'
+import Img5 from '../../assets/img5.png'
+import NoImage from '../../assets/noImage.png'
 
 const portfolioData = [
   {
@@ -15,10 +17,10 @@ const portfolioData = [
   },
   {
     id: 2,
-    image: Img2,
-    title: 'Teaching Blog',
-    github: 'https://github.com/rahmxd/teaching-mastery-blogs',
-    demo: ''
+    image: Img5,
+    title: 'Relevant Gaming Organisation',
+    github: 'https://github.com/rahmxd/Relevant-Gaming-Website',
+    demo: 'https://relevantgaming.co.uk/'
   },
   {
     id: 3,
@@ -30,12 +32,19 @@ const portfolioData = [
   {
     id: 4,
     image: Img4,
+    title: 'Teaching Blog',
+    github: 'https://github.com/rahmxd/teaching-mastery-blogs',
+    demo: ''
+  },
+  {
+    id: 5,
+    image: Img4,
     title: 'Industry Partner: Graduate Profile',
     github: 'https://github.com/mse4-dfx3',
     demo: ''
   },
   {
-    id: 5,
+    id: 6,
     image: Img4,
     title: 'Chitter (Twitter Clone)',
     github: 'https://github.com/rahmxd/chitter-challenge',

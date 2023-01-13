@@ -31,7 +31,7 @@ const TestimonialData = [
     id: 3,
     displayProfile: Alistair,
     name: 'Alistair Gibbs',
-    review: 'In our team engineering project, Rafee was a great psuedo Scrum Master. His knowledge of backend developement using NodeJs and ExpressJs was really insightful. Rafee is quick to spot bugs/techincal issues and always makes an effort to ensure the team is shared with that knowledge and how to overcome them in the future.'
+    review: 'I worked with Rafee as part of a Digital Futures Academy team project. He had been assigned as both a team mentor and member of the project.  His past experience and advice helped us define our team practices and move past our code blockers. His friendly and open style helped him always feel approachable when we had issues and needed support. In addition to providing guidance he was a committed code contributor throughout. I have no doubt that without him our velocity would have been lower and the overall experience of meeting our goals more stressful.'
   },
   {
     id: 4,
