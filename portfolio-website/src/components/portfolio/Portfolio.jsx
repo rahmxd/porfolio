@@ -2,7 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import Img1 from '../../assets/ViewProfile.png'
 import Img2 from '../../assets/img2.png'
-import Img3 from '../../assets/mathsMock.png'
+import Img3 from '../../assets/A1Maths.png'
 import Img4 from '../../assets/noImage.png'
 import Img5 from '../../assets/img5.png'
 import NoImage from '../../assets/noImage.png'
@@ -10,10 +10,10 @@ import NoImage from '../../assets/noImage.png'
 const portfolioData = [
   {
     id: 1,
-    image: Img1,
-    title: 'Industry Partner Portal: Hiring',
-    github: 'https://github.com/Team-Engineering-Project',
-    demo: 'https://www.dfxtra.co.uk'
+    image: Img3,
+    title: 'Maths Revision Website: A1 Maths',
+    github: 'https://github.com/orgs/A1Maths/repositories',
+    demo: 'https://a1maths.co.uk/'
   },
   {
     id: 2,
@@ -24,10 +24,10 @@ const portfolioData = [
   },
   {
     id: 3,
-    image: Img3,
-    title: 'Maths Revision Website: A1 Maths',
-    github: 'https://github.com/orgs/A1Maths/repositories',
-    demo: ''
+    image: Img1,
+    title: 'Industry Partner Portal: Hiring',
+    github: 'https://github.com/Team-Engineering-Project',
+    demo: 'https://www.dfxtra.co.uk'
   },
   {
     id: 4,
